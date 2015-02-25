@@ -1,4 +1,4 @@
-var slackerNews = angular.module('slackerNews', ['ui.router']);
+var slackerNews = angular.module('slackerNews', ['ui.router', 'firebase']);
 
 slackerNews.config(function($stateProvider) {
 
