@@ -1,0 +1,8 @@
+<div ng-controller="LinkCtrl">
+  <h1>Links <a ui-sref="addContent">Add Link<a></h1>
+  <ol>
+    <li ng-repeat="item in links">
+      <span ng-click="LinkFactory.upvote(item)" class="upvote">&#9757;  </span><a href="{{item.link}}">{{item.title}} {{item.upvotes}}</a>
+    </li>
+  </ol>
+</div>
